@@ -1,4 +1,6 @@
 import Header from "@/components/auth/layout/Header";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,13 +14,21 @@ export default function Home() {
         <div className="lg:px-14 xl:px-20 flex items-center justify-center">
           <form action="" className="w-full max-w-sm md:max-w-md space-y-10">
             <div className="space-y-6">
+              <div className="space-y-8">
+                <p className="text-2xl lg:text-[2rem]/[100%] font-semibold">Sign in</p>
+              </div>
+
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1.5">
-                  <input
-                    type="checkbox"
-                    className="size-4 lg:size-6 rounded-sm lg:rounded-lg accent-[#30C075]"
-                  />
-                  <p className="text-[#7D7D7D] text-xs lg:text-sm">Remember me</p>
+                  <div className="flex items-center gap-1.5">
+                    <Checkbox id="terms" className="size-4 lg:size-6" />
+                    <Label
+                      htmlFor="terms"
+                      className="text-[#7D7D7D] text-xs lg:text-sm"
+                    >
+                      Remember me
+                    </Label>
+                  </div>
                 </div>
 
                 <Link href="/auth/forgot-password">
