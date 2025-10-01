@@ -1,5 +1,6 @@
 import Header from "@/components/auth/layout/Header";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 
@@ -15,7 +16,31 @@ export default function Home() {
           <form action="" className="w-full max-w-sm md:max-w-md space-y-10">
             <div className="space-y-6">
               <div className="space-y-8">
-                <p className="text-2xl lg:text-[2rem]/[100%] font-semibold">Sign in</p>
+                <p className="text-2xl lg:text-[2rem]/[100%] font-semibold">
+                  Sign in
+                </p>
+
+                <div className="space-y-3">
+                  <Label htmlFor="username">Username</Label>
+                  <Input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter username"
+                    className="border border-[#ECECEC] bg-[#FAFAFA] rounded-xl p-6 placeholder:text-fiduciaGrey font-normal text-sm lg:text-base"
+                  />
+                </div>
+
+                <div className="space-y-3">
+                  <Label htmlFor="password">Password</Label>
+                  <Input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter password"
+                    className="border border-[#ECECEC] bg-[#FAFAFA] rounded-xl p-6 placeholder:text-fiduciaGrey font-normal text-sm lg:text-base"
+                  />
+                </div>
               </div>
 
               <div className="flex items-center justify-between">
