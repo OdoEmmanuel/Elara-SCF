@@ -11,6 +11,8 @@
   --color-primary: #1560bd;
   --color-content-fade: #aaa8ab;
   --color-fiduciaGrey: #777b82;
+  --color-sidebar-bg: #EAF1FF;
+  --color-fiduciaDark: #25272E;  
 }
 
 /* @media (prefers-color-scheme: dark) {
